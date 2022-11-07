@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+          <a class="navbar-brand" routerLink="/home">
+            <div class="d-flex align-items-center justify-content-center  ">
+                <img src="imges/logo.png" class="w-25 p-1" alt="">
+                <div>
+                    <h6 class="m-0 fw-bold  ">Weather</h6>
+                    <span class="text-muted fs-6  ">tagline goes here</span>
+                </div>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active link  rounded-pill" aria-current="page"  >Home</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <header class="position-relative">
+        <div class=" d-flex align-items-center justify-content-center  text-white   ">
+            <div class="w-75 position-absolute input-control  ">
+                <input type="text"  class="form-control mx-auto  w-75 position-relative "   id="searchBar"  placeholder="Find Your Location ....">
+                <button  class="btn btn-info position-absolute rounded-5 ">Find</button>
+                <div class="mt-5">
+                    <div class="row  rounded-2">
+                        <div class="col-md-4 text-muted item1">
+                            <div class="item ">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 id="today">Today</h5>
+                                    <h5 id="todayData" >3May</h5>
+                                </div>
+                                <div>
+                                    <h4 id="location" class="my-3">DataSeach.location</h4>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex  align-items-center justify-content-center text-white ">
+                                            <h2 id="degree" class="my-4 h1 fw-bolder text-white">30.1</h2>
+                                            <h5><sup>o</sup>C</h5>
+                                        </div>
+                                        <img id="icon" src="" class="w-50"  alt="">
+                                    </div>
+                                    <p class="text-info my-2" id="description">Patchy rain possible</p>
+                                    <div class="d-flex py-4 justify-content-around  mt-4">
+                                        <div class="d-flex  ">
+                                            <i class="fa-solid fa-umbrella"></i>
+                                            <p id="humidity"></p>%
+                                        </div>
+                                        <div class="d-flex ">
+                                            <i class="fas fa-wind"></i>
+                                            <p id="wind" class="px-1"></p>km/h
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-compass"></i>
+                                            <p id="compass">dir</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center text-muted item2"   >
+                            <div class="item mb-4 ">
+                                <h5 class="nextDay"></h5>
+                            </div>
+                            <div>
+                                <img src="" class="w-25 mb-3 icon-next" alt="">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <h4 class="text-white my-1  maxDegree ">30.1</h4>
+                                        <sup>o</sup>C
+                                    </div>
+                                <div  class="d-flex align-items-center justify-content-center">
+                                    <h6 class="minDegree">19.2</h6>
+                                    <sup>o</sup>C
+                                </div>
+                                <div>
+                                    <p class="text-info py-3 nextDesc ">Patchy rain possible</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center text-muted item1">
+                            <div class="item mb-4 ">
+                                <h5 class="nextDay"></h5>
+                            </div>
+                            <div>
+                                <img src="../../assets/logo.png" class="w-25 mb-3 icon-next" alt="">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h4 class="text-white my-1  maxDegree ">30.1</h4>
+                                    <sup>o</sup>C
+                                </div>
+                            <div  class="d-flex align-items-center justify-content-center">
+                                <h6 class="minDegree">19.2</h6>
+                                <sup>o</sup>C
+                            </div>
+                                <div>
+                                    <p class="text-info py-3 nextDesc ">Patchy rain possible</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="css/js/all.min.js"></script>
+    <script src="css/main.js"></script>
+</body>
+</html>
